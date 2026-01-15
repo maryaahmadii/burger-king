@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="w3.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!------------------page one---------------------------- -->
+    <div
+      id="container"
+      class="w-[100%] h-auto p-5 sm:h-[105vh] sm:w-[100%] items-center"
+    >
+      <!-- --------------------navbar---------------------- -->
+      <header id="header" class="-mt-[5%] -ml-[5%] sm:-mt-[1.6%] sm:-ml-[1.5%]">
+        <div class="flex items-center w-[100%]">
+          <div
+            id="logo"
+            class="sm:w-[25%] sm:h-[8vh] sm:ml-[8%] ml-[0%] w-[100%]"
+          >
+            <img class="w-[20%] h-[8vh]" src="pic/logo.png" alt="" />
+          </div>
+          <div class="ml-[8%] hidden sm:flex">
+            <ul class="flex gap-4">
+              <a href="#container" class="ml-[10]"><li>Home</li></a>
+              <a href=""><li>Menu</li></a>
+              <a href=""><li>About</li></a>
+              <a href=""><li>Shop</li></a>
+            </ul>
+          </div>
+          <button
+            onclick="ToggleMenu()"
+            class="flex sm:hidden -ml-[10%] text-gray-100"
+          >
+            <i class="text-gray-100 fa-solid fa-list"></i>
+          </button>
+          <div id="icons" class="sm:ml-[28%] -ml-[30%]">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-house"></i>
+          </div>
+        </div>
+      </header>
+      <div
+        id="menu"
+        class="hidden sm:hidden flex flex-cols justify-center bg-gray-300"
+      >
+        <ul class="block text-gray-900">
+          <a href="#container" class="ml-[10]"><li>Home</li></a>
+          <a href=""><li>Menu</li></a>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Shop</li></a>
+        </ul>
+      </div>
+      <!-- -----------------details page one----------------------------- -->
+      <div class="w-[100%] h-auto sm:w-[100%] p-4 sm:flex">
+        <div
+          id="details"
+          class="w-[100%] sm:w-[60%] flex-col sm:flex-col justify-center items-start text-left sm:pt-[5%] pt-[20%] p-5"
+        >
+          <h1>THE ULTIMATE BURGER HAUEM</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            provident repellendus quod, enim incidunt nam adipisci tempora odit,
+            placeat culpa consequuntur eligendi perspiciatis aliquid maxime
+            facere .
+          </p>
+          <div class="mt-[2%]">
+            <button>Order Now</button>
+            <button>View More</button>
+          </div>
+          <div id="pics">
+            <img
+              onclick="changeBurger(this.src)"
+              src="pic/Floating-burger-PNG.png"
+              alt=""
+            />
+            <img
+              onclick="changeBurger(this.src)"
+              src="pic/Flying Burger PNG Image - 2084x2084.png"
+              alt=""
+            />
+            <img onclick="changeBurger(this.src)" src="pic/burger.png" alt="" />
+            <img
+              onclick="changeBurger(this.src)"
+              src="pic/pngwing.com (12).png"
+              alt=""
+            />
+            <img
+              onclick="changeBurger(this.src)"
+              src="pic/pngwing.com (13).png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="burger"
+          class="w-[100%] h-[50vh] sm:h-[70vh] flex justify-center align-center sm:mt-[7%] sm:w-[40%]"
+        >
+          <img
+            id="mainBurger"
+            class="sm:w-[100%]"
+            src="pic/buger2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
