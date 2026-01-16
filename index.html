@@ -10,15 +10,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@600&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Licorice&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Pacifico&family=Permanent+Marker&family=Playwrite+NO:wght@100..400&family=Playwrite+US+Trad+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!------------------page one---------------------------- -->
+    <!------------------------------------------------------
+                           page one
+    --------------------------------------------------------->
     <div
       id="container"
       class="w-[100%] h-auto p-5 sm:h-[105vh] sm:w-[100%] items-center"
     >
-      <!-- --------------------navbar---------------------- -->
+      <!-- -----------------------------------------------------
+                            navbar
+      ------------------------------------------------------- -->
       <header id="header" class="-mt-[5%] -ml-[5%] sm:-mt-[1.6%] sm:-ml-[1.5%]">
         <div class="flex items-center w-[100%]">
           <div
@@ -27,12 +35,11 @@
           >
             <img class="w-[20%] h-[8vh]" src="pic/logo.png" alt="" />
           </div>
-          <div class="ml-[8%] hidden sm:flex">
+          <div class="ml-[10%] hidden sm:flex">
             <ul class="flex gap-4">
               <a href="#container" class="ml-[10]"><li>Home</li></a>
-              <a href=""><li>Menu</li></a>
+              <a href="#container2"><li>Menu</li></a>
               <a href=""><li>About</li></a>
-              <a href=""><li>Shop</li></a>
             </ul>
           </div>
           <button
@@ -54,12 +61,13 @@
       >
         <ul class="block text-gray-900">
           <a href="#container" class="ml-[10]"><li>Home</li></a>
-          <a href=""><li>Menu</li></a>
+          <a href="#container2"><li>Menu</li></a>
           <a href=""><li>About</li></a>
-          <a href=""><li>Shop</li></a>
         </ul>
       </div>
-      <!-- -----------------details page one----------------------------- -->
+      <!-- ------------------------------------------------
+                       details page one
+        --------------------------------------------------->
       <div class="w-[100%] h-auto sm:w-[100%] p-4 sm:flex">
         <div
           id="details"
@@ -111,6 +119,211 @@
             alt=""
           />
         </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------
+                          page2                             
+     --------------------------------------------------------->
+    <div
+      id="container2"
+      class="w-[100%] h-auto p-5 sm:w-[100%] sm:h-[90vh] flex items-center flex-col bg-red-300"
+    >
+      <div
+        id="div-page2"
+        class="sm:w-[98%] sm:h-[100vh] w-[90%] h-auto ml-[] sm:flex sm:flex-col flex flex-col justify-center items-center sm:gap-5 gap-[20]"
+      >
+        <h3 class="text-6xl pb-[5%]">_Menu_</h3>
+        <div
+          class="w-[80%] h-auto flex flex-col sm:flex sm:flex-row justify-center items-center p-4 sm:gap-5 gap-10"
+        >
+          <div
+            id="burger-menu"
+            class="flex flex-col sm:flex sm:flex-col w-[90%] h-[40vh] sm:w-[27%] sm:h-[40vh] items-start p-4 sm:mt-[0%] mt-[10%]"
+          >
+            <img
+              class="w-[100%] -mt-[75%] h-[60vh]"
+              src="pic/chicken_burger-removebg-preview.png"
+              alt=""
+            />
+            <div class="-mt-[39%]">
+              <i
+                class="fa-solid fa-star text-yellow-500 -mt-[35%] text-left"
+              ></i
+              ><i class="font-bold -ml-[7%] text-yellow-500"> 15K</i>
+            </div>
+            <h4 class="sm:text-[1.5vw] sm:mt-[7%] text-3xl">Chicken Burger</h4>
+            <p class="sm:text-[0.9vw] sm:-mt-[3%] text-[3.2vw]">
+              Lettuce, Tomato, Mayonnaise, Cheese
+            </p>
+            <div id="price" class="flex items-center mt-[5%]">
+              <p class="font-bold">12$</p>
+              <i
+                class="fa-solid fa-plus ml-[65%] p-[5px] rounded-full w-[45%]"
+              ></i>
+            </div>
+          </div>
+          <div
+            id="burger-menu"
+            class="flex flex-col sm:flex sm:flex-col w-[90%] h-[40vh] sm:w-[27%] sm:h-[40vh] items-start p-4"
+          >
+            <img
+              class="w-[100%] sm:-mt-[65%] -mt-[45%] h-[30vh]"
+              src="pic/spicy_burger-removebg-preview.png"
+              alt=""
+            />
+            <div class="-mt-[5%]">
+              <i
+                class="fa-solid fa-star text-yellow-500 -mt-[35%] text-left"
+              ></i
+              ><i class="font-bold -ml-[7%] text-yellow-500"> 5K</i>
+            </div>
+            <h4 class="sm:text-2xl sm:mt-[7%] text-3xl">Spicy Burger</h4>
+            <p class="sm:text-[0.9vw] sm:-mt-[3%] text-[3.2vw]">
+              Lettuce, Tomato, Mayonnaise, Cheese
+            </p>
+            <div id="price" class="flex items-center mt-[5%]">
+              <p class="font-bold">8$</p>
+              <i
+                class="fa-solid fa-plus ml-[65%] p-[5px] rounded-full w-[45%]"
+              ></i>
+            </div>
+          </div>
+          <div
+            id="burger-menu"
+            class="flex flex-col sm:flex sm:flex-col w-[90%] h-[40vh] sm:w-[35%] sm:h-[47vh] items-start p-4"
+          >
+            <img
+              class="w-[100%] -mt-[35%] h-[30vh]"
+              src="pic/classic_beef_burger-removebg-preview.png"
+              alt=""
+            />
+            <div class="-mt-[5%]">
+              <i
+                class="fa-solid fa-star text-yellow-500 sm:mt-[0%] -mt-[65%] text-left"
+              ></i
+              ><i class="font-bold -ml-[7%] text-yellow-500"> 12K</i>
+            </div>
+            <h4 class="sm:text-[1.5vw] mt-[5%] text-2xl">
+              Classic Beef Burger
+            </h4>
+            <p class="sm:text-[1vw] -mt-[3%] text-[3.2vw]">
+              Lettuce, Tomato, Mayonnaise, Cheese
+            </p>
+            <div id="price" class="flex items-center mt-[5%]">
+              <p>25$</p>
+              <i
+                class="fa-solid fa-plus ml-[65%] p-[5px] rounded-full w-[40%]"
+              ></i>
+            </div>
+          </div>
+          <div
+            id="burger-menu"
+            class="flex flex-col sm:flex sm:flex-col w-[90%] h-[40vh] sm:w-[27%] sm:h-[40vh] items-start p-4"
+          >
+            <img
+              class="w-[100%] -mt-[45%] h-[30vh]"
+              src="pic/mushoorm_burger-removebg-preview.png"
+              alt=""
+            />
+            <div class="-mt-[5%]">
+              <i
+                class="fa-solid fa-star text-yellow-500 -mt-[35%] text-left"
+              ></i
+              ><i class="font-bold -ml-[7%] text-yellow-500"> 8K</i>
+            </div>
+            <h4 class="sm:text-[1.5vw] sm:mt-[7%] text-2xl">Mushoorm Burger</h4>
+            <p class="sm:text-[0.9vw] sm:-mt-[3%] text-[3.2vw]">
+              Lettuce, Tomato, Mayonnaise, Cheese
+            </p>
+            <div id="price" class="flex items-center mt-[5%]">
+              <p>19$</p>
+              <i
+                class="fa-solid fa-plus ml-[65%] p-[5px] rounded-full w-[45%]"
+              ></i>
+            </div>
+          </div>
+          <div
+            id="burger-menu"
+            class="flex flex-col sm:flex sm:flex-col w-[90%] h-[40vh] sm:w-[27%] sm:h-[40vh] items-start p-4"
+          >
+            <img
+              class="w-[100%] -mt-[48%] h-[50vh]"
+              src="pic/veggie_burger-removebg-preview.png"
+              alt=""
+            />
+            <div class="mt-[9%]">
+              <i
+                class="fa-solid fa-star text-yellow-500 -mt-[35%] text-left"
+              ></i
+              ><i class="font-bold -ml-[7%] text-yellow-500"> 2K</i>
+            </div>
+            <h4 class="sm:text-2xl sm:mt-[7%] text-3xl">Veggie Burger</h4>
+            <p class="sm:text-[0.9vw] sm:-mt-[3%] text-[3.2vw]">
+              Lettuce, Tomato, Mayonnaise, Cheese
+            </p>
+            <div id="price" class="flex items-center mt-[5%]">
+              <p class="font-bold">12$</p>
+              <i
+                class="fa-solid fa-plus ml-[65%] p-[5px] rounded-full w-[45%]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------
+                         page3
+      --------------------------------------------------------->
+    <div
+      id="container3"
+      class="w-[100%] h-auto sm:w-[100%] sm:h-[100vh] flex flex-col sm:flex sm:flex-row justify-center items-center"
+    >
+      <div class="sm:w-[50%] w-[100%] sm:h-[70vh] p-4">
+        <h2 class="text-3xl font-bold text-gray-100">About Burger King</h2>
+        <p class="w-[100%] sm:w-[50%] mt-[4%] justify-left text-gray-100">
+          At Burger King, we craft burgers using the freshest ingredients and a
+          real passion for reat food.
+        </p>
+        <div
+          class="flex flex-col sm:flex sm:flex-row gap-2 justify-center items-center"
+        >
+          <div
+            id="title-page2"
+            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[25%] h-[30vh] sm:h-[35vh] rounded"
+          >
+            <i
+              style="color: rgb(1, 169, 1)"
+              class="fa-solid fa-leaf text-2xl"
+            ></i>
+            <h4 class="text-center font-bold text-2xl">Fresh Ingredients</h4>
+            <p class="text-center text-gray-100 mt-[10%]">
+              Only daily fresh meat & vegetables
+            </p>
+          </div>
+          <div
+            id="title-page2"
+            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[25%] h-[30vh] sm:h-[35vh] rounded"
+          >
+            <i class="fa-solid fa-kitchen-set text-2xl"></i>
+            <h4 class="text-center font-bold text-2xl w-[60%]">Expert Chefs</h4>
+            <p class="text-center text-gray-100 mt-[10%] text-sm">
+              Cooked by experienced profaessionals
+            </p>
+          </div>
+          <div
+            id="title-page2"
+            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[27%] h-[30vh] sm:h-[35vh] rounded"
+          >
+            <i class="fa-solid fa-bolt-lightning text-2xl"></i>
+            <h4 class="text-center font-bold text-2xl w-[60%]">Fast Service</h4>
+            <p class="text-center text-gray-100 mt-[10%]">
+              Quick preperation, premium quality
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-[100% ] sm:w-[40%] h-[10vh] sm:-mt-[30%]">
+        <img class="w-[100%] h-[80vh] rounded" src="pic/chef.jpg" alt="" />
       </div>
     </div>
     <script src="js.js"></script>
