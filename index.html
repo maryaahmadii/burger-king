@@ -39,7 +39,7 @@
             <ul class="flex gap-4">
               <a href="#container" class="ml-[10]"><li>Home</li></a>
               <a href="#container2"><li>Menu</li></a>
-              <a href=""><li>About</li></a>
+              <a href="#container3"><li>About</li></a>
             </ul>
           </div>
           <button
@@ -62,7 +62,7 @@
         <ul class="block text-gray-900">
           <a href="#container" class="ml-[10]"><li>Home</li></a>
           <a href="#container2"><li>Menu</li></a>
-          <a href=""><li>About</li></a>
+          <a href="#container3"><li>About</li></a>
         </ul>
       </div>
       <!-- ------------------------------------------------
@@ -126,7 +126,7 @@
      --------------------------------------------------------->
     <div
       id="container2"
-      class="w-[100%] h-auto p-5 sm:w-[100%] sm:h-[90vh] flex items-center flex-col bg-red-300"
+      class="w-[100%] h-auto p-5 sm:w-[100%] sm:h-[90vh] flex items-center flex-col"
     >
       <div
         id="div-page2"
@@ -276,54 +276,45 @@
       --------------------------------------------------------->
     <div
       id="container3"
-      class="w-[100%] h-auto sm:w-[100%] sm:h-[100vh] flex flex-col sm:flex sm:flex-row justify-center items-center"
+      class="w-[100%] h-auto sm:w-[100%] sm:h-[100vh] flex flex-col sm:flex sm:flex-col justify-center items-center text-center"
     >
-      <div class="sm:w-[50%] w-[100%] sm:h-[70vh] p-4">
-        <h2 class="text-3xl font-bold text-gray-100">About Burger King</h2>
-        <p class="w-[100%] sm:w-[50%] mt-[4%] justify-left text-gray-100">
-          At Burger King, we craft burgers using the freshest ingredients and a
-          real passion for reat food.
-        </p>
+      <h2 class="text-4xl mt-[20%]">_About King Burger_</h2>
+      <p id="about-sub">Crafted with Passion. Served with Pride</p>
+      <div class="flex flex-col sm:flex sm:flex-row p-5">
+        <img
+          class="sm:-mt-[21%] sm:-ml-[5%] sm:w-[60%] sm:h-[100vh]"
+          src="pic/chef-removebg-preview (1).png"
+          alt=""
+        />
         <div
-          class="flex flex-col sm:flex sm:flex-row gap-2 justify-center items-center"
+          id="info-page3-1"
+          class="w-[100%] h-[30vh] sm:w-[80%] sm:h-[30vh] flex flex-col justify-center items-start sm:mt-[3%] sm:-ml-[7%] p-3"
         >
           <div
-            id="title-page2"
-            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[25%] h-[30vh] sm:h-[35vh] rounded"
+            id="info-page3"
+            class="w-[100%] h-[30vh] sm:w-[100%] sm:h-[30vh] flex flex-col justify-center items-start sm:-mt-[0%] sm:ml-[0%] p-3"
           >
-            <i
-              style="color: rgb(1, 169, 1)"
-              class="fa-solid fa-leaf text-2xl"
-            ></i>
-            <h4 class="text-center font-bold text-2xl">Fresh Ingredients</h4>
-            <p class="text-center text-gray-100 mt-[10%]">
-              Only daily fresh meat & vegetables
+            <p class="text-gray-100 text-1xl">
+              King Burger is not just another burger joint. it is the
+              destination for burger lovers who crave bold flavor, fresh
+              ingredients, and real culinary passion
             </p>
+
+            <div class="flex flex-row sm:mt-[2%] sm:ml-[40%] ml-[30%] mt-[5%]">
+              <i class="fa-solid fa-fire"></i> <em>Fresh ingredients</em>
+            </div>
+            <div class="flex flex-row sm:mt-[0%] sm:ml-[40%] ml-[30%] mt-[2%]">
+              <i class="fa-solid fa-user"></i> <em>Expert Chefs</em>
+            </div>
+            <div class="flex flex-row sm:mt-[0%] sm:ml-[40%] ml-[30%] mt-[2%]">
+              <i class="fa-solid fa-bolt"></i> <em>Fast Service</em>
+            </div>
           </div>
-          <div
-            id="title-page2"
-            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[25%] h-[30vh] sm:h-[35vh] rounded"
-          >
-            <i class="fa-solid fa-kitchen-set text-2xl"></i>
-            <h4 class="text-center font-bold text-2xl w-[60%]">Expert Chefs</h4>
-            <p class="text-center text-gray-100 mt-[10%] text-sm">
-              Cooked by experienced profaessionals
-            </p>
-          </div>
-          <div
-            id="title-page2"
-            class="flex mt-[5%] flex-col justify-center p-3 items-center bg-red-300 w-[60%] sm:w-[27%] h-[30vh] sm:h-[35vh] rounded"
-          >
-            <i class="fa-solid fa-bolt-lightning text-2xl"></i>
-            <h4 class="text-center font-bold text-2xl w-[60%]">Fast Service</h4>
-            <p class="text-center text-gray-100 mt-[10%]">
-              Quick preperation, premium quality
-            </p>
+          <div id="button" class="w-[40%] h-[10vh] ml-[30%] mt-[2%]">
+            <button>Read More!</button>
           </div>
         </div>
-      </div>
-      <div class="w-[100% ] sm:w-[40%] h-[10vh] sm:-mt-[30%]">
-        <img class="w-[100%] h-[80vh] rounded" src="pic/chef.jpg" alt="" />
+        <!-- <img src="pic/black_burger-removebg-preview.png" alt="" /> -->
       </div>
     </div>
     <script src="js.js"></script>
